@@ -1,0 +1,69 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('img/background.png') no-repeat center center fixed; /* Add custom background image */
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    color: white;
+    display: flex;
+    flex-direction: column; /* Ensure column layout */
+    justify-content: space-between; /* Space out header, content, and footer */
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    flex: 1; /* Ensure the container takes up available space */
+}
+
+header {
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.content h2 {
+    margin-top: 20px ;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #bbb;
+    background-color: rgba(0, 0, 0, 0.8); /* Adding a background color */
+    width: 100%; /* Ensuring the footer takes up the full width */
+    box-sizing: border-box; /* Ensuring padding does not affect width */
+}
